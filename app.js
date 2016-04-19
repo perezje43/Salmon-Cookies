@@ -102,3 +102,7 @@ var allStores = function () {
 };
 
 allStores();
+
+var makeStoreRows {
+  
+}
