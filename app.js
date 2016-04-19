@@ -84,9 +84,7 @@ var locations = [pikePlace, seaTacAirport, southCenter, bellevueSquare, alki];
 var allStores = function () {
   for (var i = 0; i < locations.length; i++) {
     var storeLocations = document.createElement('ul');
-    // storeLocations.id = this.storeHtmlId;
-    //storeLocations.textContent = locations[i].store;
-    // document.body.appendChild(storeLocations);
+    storeLocations.id = 'storeLocations';
     storeLocations.textContent = locations[i].store;
     document.body.appendChild(storeLocations);
     for (var j = 0; j < times.length; j++) {
@@ -94,12 +92,12 @@ var allStores = function () {
       locations[i].customers.push(locations[i].randomVisitorsPerHour());
       var openingTimes = document.createElement('li');
       openingTimes.textContent = times[j] + ': ' + locations[i].randomCookiesPerHour() + ' cookies.';
-      document.body.appendChild(openingTimes);
+      storeLocations.appendChild(openingTimes);
       locations[i].dailyTotal += locations[i].randomCookiesPerHour();
     };
     var cookiesPerStore = document.createElement('li');
     cookiesPerStore.textContent = locations[i].store + ' Total: ' + locations[i].dailyTotal + '.';
-    document.body.appendChild(cookiesPerStore);
+    storeLocations.appendChild(cookiesPerStore);
   };
 };
 
