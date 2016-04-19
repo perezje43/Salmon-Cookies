@@ -79,11 +79,14 @@ var alki = {
 };
 
 var times = ['6AM', '7AM', '8AM', '9AM', '10AM', '11AM', '12AM', '1PM', '2PM', '3PM', '4PM', '5PM', '6PM', '7PM', '8PM'];
-var  locations = [pikePlace, seaTacAirport, southCenter, bellevueSquare, alki];
+var locations = [pikePlace, seaTacAirport, southCenter, bellevueSquare, alki];
 
 var allStores = function () {
   for (var i = 0; i < locations.length; i++) {
     var storeLocations = document.createElement('ul');
+    // storeLocations.id = this.storeHtmlId;
+    //storeLocations.textContent = locations[i].store;
+    // document.body.appendChild(storeLocations);
     storeLocations.textContent = locations[i].store;
     document.body.appendChild(storeLocations);
     for (var j = 0; j < times.length; j++) {
