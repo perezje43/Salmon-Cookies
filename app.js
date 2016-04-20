@@ -104,5 +104,8 @@ var allStores = function () {
 allStores();
 
 var makeStoreRows {
-  
+  var table = document.createElement('table');
+  var tr = document.createElement('tr');
+  var th = document.createElement('th');
+  for(var i = 0; i <)
 }
