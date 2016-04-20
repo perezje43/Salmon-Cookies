@@ -1,4 +1,9 @@
 * {
   font-family: 'Poiret One', cursive;
   background-color: salmon;
+  font-weight: bold;
+}
+
+input {
+  background-color: white;
 }
