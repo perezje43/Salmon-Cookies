@@ -65,5 +65,27 @@ function createBody() {
     td3.textContent = locations[i].dailyTotal;
     tr.appendChild(td3);
   }
+  locations = [];
 }
 createBody();
+
+var newStore = document.getElementById('new-store');
+
+function handleNewStoreSubmit(event) {
+  event.preventDefault();
+  var newStoreName = event.target.storeName.value;
+  var newMinimumCustomers = event.target.minimumCustomers.value;
+  var newMaximumCustomers = event.target.maximumCustomers.value;
+  var newAverageCookies = event.target.averageCookies.value;
+
+  var newStore = new StoreLocations(newStoreName, newMinimumCustomers, newMaximumCustomers, newAverageCookies);
+
+  event.target.storeName.value = null;
+  event.target.minimumCustomers.value = null;
+  event.target.maximumCustomers.value = null;
+  event.target.averageCookies.value = null;
+
+  createBody();
+}
+
+newStore.addEventListener('submit', handleNewStoreSubmit);
