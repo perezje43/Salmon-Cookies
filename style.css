@@ -1,9 +1,68 @@
-* {
-  font-family: 'Poiret One', cursive;
-  background-color: salmon;
-  font-weight: bold;
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0px;
 }
 
-input {
-  background-color: white;
+.topOfPage {
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  width: 100%;
+  font-size: 50px;
+  background-color: salmon;
+}
+
+.salmonTitle {
+  text-align: center;
+  background-color: #A8B5BA;
+  margin-bottom: 10px;
+}
+
+.salmonPhotos {
+  margin: 0px;
+  padding: 0px
+}
+
+.container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#one{
+  height: 50%;
+  width: 50%;
+}
+
+#two {
+  height: 50%;
+  width: 50%;
+}
+#three {
+ float: right;
+ height: 50%;
+ width: 50%;
+}
+#four {
+  height: 50%;
+  width: 50%;
+}
+#five {
+  height: 50%;
+  width: 50%;
+}
+#six {
+  height: 50%;
+  width: 50%;
+}
+#seven {
+  width: 100%;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  size: 100px;
 }
