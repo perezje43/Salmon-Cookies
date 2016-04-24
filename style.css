@@ -29,8 +29,8 @@ body {
 }
 
 #one{
-  height: 50%;
-  width: 50%;
+  height: 224px;
+  width: 224px;
 }
 
 #two {
@@ -39,6 +39,7 @@ body {
 }
 #three {
  float: right;
+ padding: 10px;
  height: 50%;
  width: 50%;
 }
@@ -51,8 +52,8 @@ body {
   width: 50%;
 }
 #six {
-  height: 50%;
-  width: 50%;
+  height: 200px;
+  width: 200px;
 }
 #seven {
   width: 100%;
